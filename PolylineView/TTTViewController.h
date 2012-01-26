@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface TTTViewController : UIViewController
+@interface TTTViewController : UIViewController<MKMapViewDelegate>
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2A3CE814D0ECCB007F804C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2A3CE714D0ECCB007F804C /* CoreLocation.framework */; };
+		8C2A3CEB14D0ECD1007F804C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2A3CEA14D0ECD1007F804C /* MapKit.framework */; };
 		8C2B4A3314D0D55400CF569E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2B4A3214D0D55400CF569E /* UIKit.framework */; };
 		8C2B4A3514D0D55400CF569E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2B4A3414D0D55400CF569E /* Foundation.framework */; };
 		8C2B4A3714D0D55400CF569E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2B4A3614D0D55400CF569E /* CoreGraphics.framework */; };
@@ -18,17 +20,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C2A3CE714D0ECCB007F804C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8C2A3CEA14D0ECD1007F804C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8C2B4A2E14D0D55400CF569E /* PolylineView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolylineView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2B4A3214D0D55400CF569E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8C2B4A3414D0D55400CF569E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8C2B4A3614D0D55400CF569E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8C2B4A3A14D0D55400CF569E /* PolylineView-Info.plist */ = {isa = PBXFileReference; path = "PolylineView-Info.plist"; sourceTree = "<group>"; };
+		8C2B4A3A14D0D55400CF569E /* PolylineView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PolylineView-Info.plist"; sourceTree = "<group>"; };
 		8C2B4A3C14D0D55400CF569E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C2B4A3E14D0D55400CF569E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8C2B4A4014D0D55400CF569E /* PolylineView-Prefix.pch */ = {isa = PBXFileReference; path = "PolylineView-Prefix.pch"; sourceTree = "<group>"; };
-		8C2B4A4114D0D55400CF569E /* TTTAppDelegate.h */ = {isa = PBXFileReference; path = TTTAppDelegate.h; sourceTree = "<group>"; };
+		8C2B4A4014D0D55400CF569E /* PolylineView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PolylineView-Prefix.pch"; sourceTree = "<group>"; };
+		8C2B4A4114D0D55400CF569E /* TTTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTAppDelegate.h; sourceTree = "<group>"; };
 		8C2B4A4214D0D55400CF569E /* TTTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTAppDelegate.m; sourceTree = "<group>"; };
-		8C2B4A4414D0D55400CF569E /* TTTViewController.h */ = {isa = PBXFileReference; path = TTTViewController.h; sourceTree = "<group>"; };
+		8C2B4A4414D0D55400CF569E /* TTTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTViewController.h; sourceTree = "<group>"; };
 		8C2B4A4514D0D55400CF569E /* TTTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTViewController.m; sourceTree = "<group>"; };
 		8C2B4A4814D0D55400CF569E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TTTViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2A3CEB14D0ECD1007F804C /* MapKit.framework in Frameworks */,
+				8C2A3CE814D0ECCB007F804C /* CoreLocation.framework in Frameworks */,
 				8C2B4A3314D0D55400CF569E /* UIKit.framework in Frameworks */,
 				8C2B4A3514D0D55400CF569E /* Foundation.framework in Frameworks */,
 				8C2B4A3714D0D55400CF569E /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +56,8 @@
 		8C2B4A2314D0D55400CF569E = {
 			isa = PBXGroup;
 			children = (
+				8C2A3CEA14D0ECD1007F804C /* MapKit.framework */,
+				8C2A3CE714D0ECCB007F804C /* CoreLocation.framework */,
 				8C2B4A3814D0D55400CF569E /* PolylineView */,
 				8C2B4A3114D0D55400CF569E /* Frameworks */,
 				8C2B4A2F14D0D55400CF569E /* Products */,
@@ -275,6 +283,7 @@
 				8C2B4A4E14D0D55400CF569E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
