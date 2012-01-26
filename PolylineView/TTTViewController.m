@@ -209,6 +209,7 @@
                                    timeoutInterval:20];
   
   void (^onSuccess)(NSData *, NSHTTPURLResponse *) = ^(NSData *data, NSHTTPURLResponse *res) {
+    [self _enableUI:YES];
     if (data == nil) {
       return;
     }
@@ -230,10 +231,9 @@
         return;
       }
       
-      NSString *polylineString = [[[routes objectAtIndex:0] objectForKey:@"overview_polyline"] objectForKey:@"points"];
-      
       NSArray *locs;
       if (self.sourceSegment.selectedSegmentIndex) {
+        NSString *polylineString = [[[routes objectAtIndex:0] objectForKey:@"overview_polyline"] objectForKey:@"points"];
         locs = [self _decodePolyline:polylineString];
       }
       else {
@@ -264,9 +264,9 @@
       dispatch_async(dispatch_get_main_queue(), ^{
         [self.mapView setRegion:region animated:YES];
         [self.mapView addOverlay:line];
-        [self _enableUI:YES];
       });
-    }  };
+    }  
+  };
   void (^onError)(NSError *, NSHTTPURLResponse *) = ^(NSError *error, NSHTTPURLResponse *res) {
     dispatch_async(dispatch_get_main_queue(), ^{
       [self _enableUI:YES];
