@@ -215,7 +215,7 @@
     }
     else {
       if ([res statusCode] >= 400) {
-        self.descriptionLabel.text = [NSString stringWithFormat:@"Response: status code:<%d>",[ res statusCode]];
+        self.descriptionLabel.text = [NSString stringWithFormat:@"Response: http status code:<%d>",[ res statusCode]];
         return;
       }
       
@@ -224,6 +224,9 @@
                                                             error:nil];
       
       if (!([[res objectForKey:@"status"] isEqualToString:@"OK"])) {
+        self.descriptionLabel.text = [NSString stringWithFormat:@"Response: status:<%@>",
+                                      [res objectForKey:@"status"]];
+
         return;
       }
       NSArray *routes = [res objectForKey:@"routes"];
@@ -283,6 +286,7 @@
   [self.toField setEnabled:yesno];
   [self.fromField setEnabled:yesno];
   [self.modeSegment setEnabled:yesno];
+  [self.sourceSegment setEnabled:yesno];
   [self.renderButton setEnabled:yesno];
 }
 
@@ -293,6 +297,7 @@
   self.toField = nil;
   self.fromField = nil;
   self.modeSegment = nil;
+  self.sourceSegment = nil;
   self.renderButton = nil;
 }
 
